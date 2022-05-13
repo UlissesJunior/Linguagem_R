@@ -1,23 +1,22 @@
-import logo from "./img/logo.png";
 import "./styles/app.css";
+import Nav from "./components/navbar.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Trabalho sobre Linguagem R</p>
-        <p>
-          Cauã Gabriel Pereira da Silva
-          <br />
-          Kamily Maria Barboza Leduino
-          <br />
-          Luiz Felipe Silvestre de Castro
-          <br />
-          Ulisses Douglas de Paula Assis Junior
-        </p>
-      </header>
-    </div>
+    <>
+      <div className="container">
+        <Nav />
+        <div className="center">
+          <p>Site em construção</p>
+          <p>
+            Cauã Gabriel Pereira da Silva <br />
+            Kamily Maria Barboza Leduino <br />
+            Luiz Felipe Silvestre de Castro <br />
+            Ulisses Douglas de Paula Assis Junior
+          </p>
+        </div>
+      </div>
+    </>
   );
 }
 
