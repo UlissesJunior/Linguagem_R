@@ -14,7 +14,7 @@ function App() {
           <br />
           Luiz Felipe Silvestre de Castro
           <br />
-          Ulisses Douglas de Paula Asssis Junior
+          Ulisses Douglas de Paula Assis Junior
         </p>
       </header>
     </div>
