@@ -1,6 +1,12 @@
 //Variáveis
-$bg_dark_2: #121214;
-
+$bg_white: #FFFFFF;
+$bg_blue: #3B3AD3;
+$button_pink: #F500B3;
+$scroll: #1A1E5C;
+$font_nav: #0a0a0a;
+$font_text: #1A1E5C;
+$box: 0px 0px 24px 4px rgba(245, 0, 179, 0.4);
+$footer: #F5F4FA;
 
 //Fontes
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -11,12 +17,11 @@ $bg_dark_2: #121214;
 }
 
 ::-webkit-scrollbar-track {
-  background: $bg_dark_2;
+  background: $bg_white;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0049FF;
-  border-radius: 16px;
+  background-color: $scroll;
 }
 
 * {
@@ -27,12 +32,16 @@ $bg_dark_2: #121214;
 }
 
 body {
-  background-color: $bg_dark_2;
+  background-color: $bg_white;
+}
+
+.container:first-child {
+  height: calc(100vh - 80px);
 }
 
 .container {
   max-width: 1440px;
-  height: 100%;
+  height: 100vh;
   margin: auto;
 }
 
@@ -41,19 +50,28 @@ body {
   margin: auto;
 }
 
+.box {
+  background-color: $bg_blue;
+}
+
 .nav-container {
-  margin-top: 48px;
-  width: 100%;
-  height: 40px;
+  max-width: 1440px;
+  margin: auto;
   position: relative;
-  color: #FFF;
-  font-size: 18px;
+  width: 100%;
+  height: 80px;
+  font-size: 16px;
+  background: $bg_white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .nav-left {
   position: absolute;
   left: 0;
-  // top: 10px;
   z-index: 1;
   cursor: pointer;
 }
@@ -75,43 +93,154 @@ body {
     text-align: center;
     cursor: pointer;
     justify-content: space-between;
-    color: #FFF;
+    color: $font_nav;
   }
 
   ul:hover {
     transform-origin: 50% 50% 0px;
     transition: ease-in-out 0.2s;
     content: '';
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 8px;
   }
 }
 
-.nav-right {
-  position: absolute;
-  right: 0;
-  top: 12px;
+// Vou usar se tiver dark mode
+// .nav-right {
+//   position: absolute;
+//   right: 0;
 
-  img {
-    cursor: pointer;
+//   img {
+//     cursor: pointer;
+//   }
+// }
+
+//Body
+.container-box {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    width: 580px;
+    font-size: 32px;
+    font-weight: 500;
+    color: $bg_white;
+    line-height: 48px;
   }
+
+  .left {
+    .inline-box {
+      margin-top: 20px;
+      text-align: justify;
+      width: 580px;
+      display: inline-flex;
+      justify-content: space-between;
+
+      .inline:first-child {
+        width: 300px;
+
+        p {
+          width: 270px;
+        }
+      }
+
+      .inline {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 255px;
+
+        p {
+          font-size: 12px;
+          line-height: 18px;
+          color: $bg_white;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    button {
+      margin-top: 67px;
+      width: 175px;
+      height: 50px;
+      font-size: 16px;
+      border-radius: 24px;
+      color: $bg_white;
+      background: $button_pink;
+      cursor: pointer;
+    }
+
+    button:hover {
+      box-shadow: $box;
+      transition: ease-out 0.8s;
+    }
+  }
+
+  .right {
+    position: absolute;
+    right: 0;
+  }
+
 }
 
-.center {
-  height: 80vh;
+.container-box {
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: $font_text;
+    line-height: 48px;
+  }
+
+  h3 {
+    width: 500px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: $font_text;
+    text-align: justify;
+  }
+
+  .components {
+    margin-top: 80px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .component:nth-child(2) {
+      margin-top: 50px;
+    }
+    .component {
+      width: 240px;
+      height: 120px;
+      border-radius: 18px;
+      background: $bg_blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      p {
+        color: $bg_white;
+        text-align: center;
+        margin-top: 24px;
+      }
+    }
+  }
+
+}
+
+
+.footer-container {
+  height: 12vh;
+  background: $footer;
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  p:first-child {
-    color: #FFF;
-    font-size: 48px;
-  }
-
-  p {
-    color: #FFF;
-    font-size: 22px;
-  }
 }
