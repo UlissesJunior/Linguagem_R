@@ -105,7 +105,7 @@ body {
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
   content: '';
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(245, 244, 250, 0.8);
   border-radius: 8px;
 }
 
@@ -149,7 +149,7 @@ body {
 }
 
 .container-box .left .inline-box .inline:first-child p {
-  width: 270px;
+  max-width: 270px;
 }
 
 .container-box .left .inline-box .inline {
@@ -210,6 +210,10 @@ body {
   margin-top: 20px;
   color: #1A1E5C;
   text-align: justify;
+}
+
+.container-box a {
+  text-decoration: none;
 }
 
 .container-box .components {
@@ -274,5 +278,81 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .container .right {
+    display: none;
+  }
+  .container .container-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .container-box h1 {
+    text-align: justify;
+    width: 80vw;
+    margin: auto;
+    font-size: 1.8em;
+  }
+  .container .container-box h3 {
+    width: 80vw;
+  }
+  .container .container-box .inline-box {
+    width: 80vw;
+  }
+  .container .container-box .inline-box p {
+    width: 28vw;
+  }
+  .container .container-box .button-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-box .components {
+    max-width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container-box .components .component:first-child {
+    margin-top: 24px;
+  }
+  .container-box .components .component:nth-child(2) {
+    margin-top: 0;
+  }
+  .container-box .components .component:last-child {
+    margin-bottom: 0;
+  }
+  .container-box .components .component {
+    width: 80vw;
+    height: 12vh;
+    margin-bottom: 24px;
+  }
 }
 /*# sourceMappingURL=app.css.map */

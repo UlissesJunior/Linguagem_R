@@ -100,7 +100,7 @@ body {
     transform-origin: 50% 50% 0px;
     transition: ease-in-out 0.2s;
     content: '';
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(245, 244, 250, 0.8);
     border-radius: 8px;
   }
 }
@@ -143,7 +143,7 @@ body {
         width: 300px;
 
         p {
-          width: 270px;
+          max-width: 270px;
         }
       }
 
@@ -206,15 +206,21 @@ body {
     text-align: justify;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .components {
     margin-top: 80px;
     width: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     .component:nth-child(2) {
       margin-top: 50px;
     }
+
     .component {
       width: 240px;
       height: 120px;
@@ -225,6 +231,7 @@ body {
       justify-content: center;
       align-items: center;
       cursor: pointer;
+
       p {
         color: $bg_white;
         text-align: center;
@@ -235,7 +242,6 @@ body {
 
 }
 
-
 .footer-container {
   height: 12vh;
   background: $footer;
@@ -243,4 +249,73 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    .right {
+      display: none;
+    }
+
+    .container-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        text-align: justify;
+        width: 80vw;
+        margin: auto;
+        font-size: 1.8em;
+      }
+
+      h3 {
+        width: 80vw;
+      }
+      
+      .inline-box {
+        width: 80vw;
+
+        p {
+          width: 28vw;
+        }
+      }
+
+      .button-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 500px) {
+  .container-box {
+    .components {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .component:first-child {
+        margin-top: 24px;
+      }
+      .component:nth-child(2) {
+        margin-top: 0;
+      }
+      .component:last-child {
+        margin-bottom: 0;
+      }
+
+      .component {
+        width: 80vw;
+        height: 12vh;
+        margin-bottom: 24px;
+      }
+    }
+
+  }
 }

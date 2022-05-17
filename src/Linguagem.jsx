@@ -2,7 +2,6 @@ import "./styles/app.css";
 import Nav from "./components/navbar.jsx";
 import Footer from "./components/footer.jsx";
 
-import Star from "./img/star.png";
 import Anime1 from "./img/anime-r.png";
 import Anime2 from "./img/anime-2.png";
 import Icon1 from "./img/video_icon.png";

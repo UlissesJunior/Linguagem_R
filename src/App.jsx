@@ -46,7 +46,9 @@ function App() {
               </div>
               <div>
                 <Link to="/Linguagem_R/sobre">
-                  <button>Saiba Mais</button>
+                  <div className="button-center">
+                    <button>Saiba Mais</button>
+                  </div>
                 </Link>
               </div>
             </div>
