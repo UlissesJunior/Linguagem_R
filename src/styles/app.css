@@ -325,6 +325,7 @@ body {
 
 @media (max-width: 500px) {
   .container-box .components {
+    margin-top: 8px;
     max-width: 500px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -351,7 +352,7 @@ body {
   }
   .container-box .components .component {
     width: 80vw;
-    height: 12vh;
+    height: 120px;
     margin-bottom: 24px;
   }
 }
