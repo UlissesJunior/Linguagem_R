@@ -1,15 +1,5 @@
-//Variáveis
-$bg_white: #FFFFFF;
-$bg_blue: #3B3AD3;
-$button_pink: #F500B3;
-$scroll: #1A1E5C;
-$font_nav: #0a0a0a;
-$font_text: #1A1E5C;
-$box: 0px 0px 24px 4px rgba(245, 0, 179, 0.4);
-$footer: #F5F4FA;
-
-//Fontes
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "variables";
+@import "responsive";
 
 //Navbar
 ::-webkit-scrollbar {
@@ -40,13 +30,13 @@ body {
 }
 
 .container {
-  max-width: 1440px;
-  height: 100vh;
+  max-width: $container-l;
+  height: clamp(100vh, 100%, calc(100% + 80px)); 
   margin: auto;
 }
 
 .container-box {
-  max-width: 1100px;
+  max-width: $container-m;
   margin: auto;
 }
 
@@ -55,7 +45,7 @@ body {
 }
 
 .nav-container {
-  max-width: 1440px;
+  max-width: $container-l;
   margin: auto;
   position: relative;
   width: 100%;
@@ -249,74 +239,4 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-@media (max-width: 1000px) {
-  .container {
-    .right {
-      display: none;
-    }
-
-    .container-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      h1 {
-        text-align: justify;
-        width: 80vw;
-        margin: auto;
-        font-size: 1.8em;
-      }
-
-      h3 {
-        width: 80vw;
-      }
-      
-      .inline-box {
-        width: 80vw;
-
-        p {
-          width: 28vw;
-        }
-      }
-
-      .button-center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-
-  }
-}
-
-@media (max-width: 500px) {
-  .container-box {
-    .components {
-      margin-top: 8px;
-      max-width: 500px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .component:first-child {
-        margin-top: 24px;
-      }
-      .component:nth-child(2) {
-        margin-top: 0;
-      }
-      .component:last-child {
-        margin-bottom: 0;
-      }
-
-      .component {
-        width: 80vw;
-        height: 120px;
-        margin-bottom: 24px;
-      }
-    }
-
-  }
 }

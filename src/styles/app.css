@@ -1,4 +1,81 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@media (max-width: 1000px) {
+  .container .right {
+    display: none;
+  }
+  .container .container-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .container-box h1 {
+    text-align: justify;
+    width: 80vw;
+    margin: auto;
+    font-size: 1.8em;
+  }
+  .container .container-box h3 {
+    width: 80vw;
+  }
+  .container .container-box .inline-box {
+    width: 80vw;
+  }
+  .container .container-box .inline-box p {
+    width: 28vw;
+  }
+  .container .container-box .button-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-box .components {
+    margin-top: 8px;
+    max-width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container-box .components .component:first-child {
+    margin-top: 24px;
+  }
+  .container-box .components .component:nth-child(2) {
+    margin-top: 0;
+  }
+  .container-box .components .component:last-child {
+    margin-bottom: 0;
+  }
+  .container-box .components .component {
+    width: 80vw;
+    height: 120px;
+    margin-bottom: 24px;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -28,7 +105,7 @@ body {
 
 .container {
   max-width: 1440px;
-  height: 100vh;
+  height: clamp(100vh, 100%, calc(100% + 80px));
   margin: auto;
 }
 
@@ -278,82 +355,5 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-@media (max-width: 1000px) {
-  .container .right {
-    display: none;
-  }
-  .container .container-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .container .container-box h1 {
-    text-align: justify;
-    width: 80vw;
-    margin: auto;
-    font-size: 1.8em;
-  }
-  .container .container-box h3 {
-    width: 80vw;
-  }
-  .container .container-box .inline-box {
-    width: 80vw;
-  }
-  .container .container-box .inline-box p {
-    width: 28vw;
-  }
-  .container .container-box .button-center {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media (max-width: 500px) {
-  .container-box .components {
-    margin-top: 8px;
-    max-width: 500px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .container-box .components .component:first-child {
-    margin-top: 24px;
-  }
-  .container-box .components .component:nth-child(2) {
-    margin-top: 0;
-  }
-  .container-box .components .component:last-child {
-    margin-bottom: 0;
-  }
-  .container-box .components .component {
-    width: 80vw;
-    height: 120px;
-    margin-bottom: 24px;
-  }
 }
 /*# sourceMappingURL=app.css.map */
