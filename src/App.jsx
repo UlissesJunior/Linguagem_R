@@ -26,7 +26,7 @@ function App() {
               <div className="inline-box">
                 <div className="inline">
                   <img src={Star} alt="Logo" />
-                  <p>
+                  <p style={{ margin:"0px" }}>
                     Aqui, você pode aprender mais sobre a Linguagem R, que é uma
                     linguagem de programação multi-paradigma orientada a
                     objetos, voltada à manipulação, análise e visualização de
@@ -35,7 +35,7 @@ function App() {
                 </div>
                 <div className="inline">
                   <img src={Star} alt="Star" />
-                  <p>
+                  <p style={{ margin:"0px" }}>
                     <b>Alunos no projeto:</b> <br />
                     Cauã Gabriel Pereira da Silva <br />
                     Kamily Maria Barboza Leduino <br />
