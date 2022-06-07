@@ -29,7 +29,7 @@ function Linguagem() {
       </div>
 
       <div className="container">
-        <div className="container-box" style={{ padding: "100px 0" }}>
+        <div className="container-box" style={{ padding: "80px 20px" }}>
           <h2>O que é linguagem R?</h2>
           <p>
             R é uma linguagem de programação estatística e gráfica que vem se
@@ -237,132 +237,136 @@ function Linguagem() {
             <br />
           </p>
           <br />
-          <table
-            style={{
-              width: "100%",
-              border: "3px solid #000",
-              borderRadius: "8px",
-              textAlign: "justify",
-            }}
-          >
-            <tr>
-              <td>
-                <b>Versão</b>
-              </td>
-              <td>
-                <b>Data</b>
-              </td>
-              <td>
-                <b>Descrição</b>
-              </td>
-            </tr>
-            <tr>
-              <td>0.16</td>
-              <td>01/04/1997</td>
-              <td>
-                Essa foi a última versão alpha desenvolvida primariamente por
-                Ihaka e Gentleman. Muitas das funcionalidades descritas no
-                "Livro Branco" (Modelos Estatísticos em S) foram implementadas.
-                A lista de emails começou em 1 de Abril de 1997.
-              </td>
-            </tr>
-            <tr>
-              <td>0.49</td>
-              <td>23/04/1997</td>
-              <td>
-                Esse é o código fonte mais antigo disponível no CRAN.O próprio
-                CRAN foi lançado nessa data, com 3 mirrors hospedando
-                inicialmente 12 pacotes. Versões Alpha do R para Microsoft
-                Windows e Mac OS foram disponibilizadas logo depois dessa
-                versão.
-              </td>
-            </tr>
-            <tr>
-              <td>0.60</td>
-              <td>05/12/1997</td>
-              <td>
-                R se torna parte do Projeto GNU. O código passa a ser hospedado
-                e mantido usando CVS.
-              </td>
-            </tr>
-            <tr>
-              <td>0.65.1</td>
-              <td>07/10/1999</td>
-              <td>
-                Primeiras versões das funções update.packages e install.packages
-                para download e instalação de pacotes do CRAN.
-              </td>
-            </tr>
-            <tr>
-              <td>1.0</td>
-              <td>29/02/2000</td>
-              <td>
-                Considerada pelos desenvolvedores como estável para uso em
-                produção.
-              </td>
-            </tr>
-            <tr>
-              <td>1.4</td>
-              <td>19/12/2001</td>
-              <td>
-                Métodos S4 foram introduzidos e a primeira versão para Mac OS X
-                foi lançada pouco depois.
-              </td>
-            </tr>
-            <tr>
-              <td>2.0</td>
-              <td>04/10/2004</td>
-              <td>
-                Introduzido lazy loading, que permite carregamento mais rápido
-                de dados e gasto de memória reduzido.
-              </td>
-            </tr>
-            <tr>
-              <td>2.1</td>
-              <td>18/04/2005</td>
-              <td>
-                Suporte para UTF-8 e esforços iniciais para localização e
-                internacionalização para outros idiomas.
-              </td>
-            </tr>
-            <tr>
-              <td>2.11</td>
-              <td>22/04/2010</td>
-              <td>Suporte para sistemas Windows de 64 bits.</td>
-            </tr>
-            <tr>
-              <td>2.13</td>
-              <td>14/04/2011</td>
-              <td>
-                Adicionada uma nova função ao compilador que permite acelerar a
-                execução das instruções traduzindo-as para byte-code.
-              </td>
-            </tr>
-            <tr>
-              <td>2.14</td>
-              <td>31/10/2011</td>
-              <td>
-                Adicionados namespaces mandatórios para os pacotes. Adicionado
-                um novo pacote parallel.
-              </td>
-            </tr>
-            <tr>
-              <td>2.15</td>
-              <td>30/03/2012</td>
-              <td>
-                Novas funções de balanceamento de carga. Velocidade de
-                serialização melhorada para vetores longos.
-              </td>
-            </tr>
-            <tr>
-              <td>3.0</td>
-              <td>03/04/2013</td>
-              <td>
-                Suporte para indexadores numéricos de valor 231 e maiores em
-                sistemas de 64 bits.
-              </td>
-            </tr>
-          </table>
+          <div className="table">
+            <table
+              style={{
+                width: "90%",
+                border: "3px solid #1A1E5C",
+                borderRadius: "8px",
+                textAlign: "justify",
+              }}
+            >
+              <tr>
+                <td>
+                  <b>Versão</b>
+                </td>
+                <td>
+                  <b>Data</b>
+                </td>
+                <td>
+                  <b>Descrição</b>
+                </td>
+              </tr>
+              <tr>
+                <td>0.16</td>
+                <td>01/04/1997</td>
+                <td>
+                  Essa foi a última versão alpha desenvolvida primariamente por
+                  Ihaka e Gentleman. Muitas das funcionalidades descritas no
+                  "Livro Branco" (Modelos Estatísticos em S) foram
+                  implementadas. A lista de emails começou em 1 de Abril de
+                  1997.
+                </td>
+              </tr>
+              <tr>
+                <td>0.49</td>
+                <td>23/04/1997</td>
+                <td>
+                  Esse é o código fonte mais antigo disponível no CRAN.O próprio
+                  CRAN foi lançado nessa data, com 3 mirrors hospedando
+                  inicialmente 12 pacotes. Versões Alpha do R para Microsoft
+                  Windows e Mac OS foram disponibilizadas logo depois dessa
+                  versão.
+                </td>
+              </tr>
+              <tr>
+                <td>0.60</td>
+                <td>05/12/1997</td>
+                <td>
+                  R se torna parte do Projeto GNU. O código passa a ser
+                  hospedado e mantido usando CVS.
+                </td>
+              </tr>
+              <tr>
+                <td>0.65.1</td>
+                <td>07/10/1999</td>
+                <td>
+                  Primeiras versões das funções update.packages e
+                  install.packages para download e instalação de pacotes do
+                  CRAN.
+                </td>
+              </tr>
+              <tr>
+                <td>1.0</td>
+                <td>29/02/2000</td>
+                <td>
+                  Considerada pelos desenvolvedores como estável para uso em
+                  produção.
+                </td>
+              </tr>
+              <tr>
+                <td>1.4</td>
+                <td>19/12/2001</td>
+                <td>
+                  Métodos S4 foram introduzidos e a primeira versão para Mac OS
+                  X foi lançada pouco depois.
+                </td>
+              </tr>
+              <tr>
+                <td>2.0</td>
+                <td>04/10/2004</td>
+                <td>
+                  Introduzido lazy loading, que permite carregamento mais rápido
+                  de dados e gasto de memória reduzido.
+                </td>
+              </tr>
+              <tr>
+                <td>2.1</td>
+                <td>18/04/2005</td>
+                <td>
+                  Suporte para UTF-8 e esforços iniciais para localização e
+                  internacionalização para outros idiomas.
+                </td>
+              </tr>
+              <tr>
+                <td>2.11</td>
+                <td>22/04/2010</td>
+                <td>Suporte para sistemas Windows de 64 bits.</td>
+              </tr>
+              <tr>
+                <td>2.13</td>
+                <td>14/04/2011</td>
+                <td>
+                  Adicionada uma nova função ao compilador que permite acelerar
+                  a execução das instruções traduzindo-as para byte-code.
+                </td>
+              </tr>
+              <tr>
+                <td>2.14</td>
+                <td>31/10/2011</td>
+                <td>
+                  Adicionados namespaces mandatórios para os pacotes. Adicionado
+                  um novo pacote parallel.
+                </td>
+              </tr>
+              <tr>
+                <td>2.15</td>
+                <td>30/03/2012</td>
+                <td>
+                  Novas funções de balanceamento de carga. Velocidade de
+                  serialização melhorada para vetores longos.
+                </td>
+              </tr>
+              <tr>
+                <td>3.0</td>
+                <td>03/04/2013</td>
+                <td>
+                  Suporte para indexadores numéricos de valor 231 e maiores em
+                  sistemas de 64 bits.
+                </td>
+              </tr>
+            </table>
+          </div>
           <br />
           <h2>Suporte comercial para o R </h2>
           <p>
@@ -394,7 +398,7 @@ function Linguagem() {
           <br />
           <h2>Bibliografia </h2>
           <p>
-            <ExternalLink href="https://example.com">
+            <ExternalLink href="https://pt.wikipedia.org/wiki/R_(linguagem_de_programa%C3%A7%C3%A3o)">
               <span>Wikipedia</span>
             </ExternalLink>
           </p>

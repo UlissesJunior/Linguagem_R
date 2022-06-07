@@ -352,4 +352,13 @@ body {
   text-align: center;
   margin-top: 24px;
 }
+
+.table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=app.css.map */
