@@ -13,3 +13,16 @@ $container-m: 1100px;
 
 //Fontes
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+//Scroll
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: $bg_white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: $scroll;
+  }

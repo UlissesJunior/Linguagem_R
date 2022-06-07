@@ -1,0 +1,71 @@
+//Navbar
+.nav-container {
+    max-width: $container-l;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    font-size: 16px;
+    background: $bg_white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-left {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.nav-center {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        line-height: 40px;
+        height: 40px;
+        width: 120px;
+        text-align: center;
+        cursor: pointer;
+        justify-content: space-between;
+        color: $font_nav;
+    }
+
+    ul:hover {
+        transform-origin: 50% 50% 0px;
+        transition: ease-in-out 0.2s;
+        content: '';
+        background-color: rgba(245, 244, 250, 0.8);
+        border-radius: 8px;
+    }
+}
+
+// Vou usar se tiver dark mode
+// .nav-right {
+//   position: absolute;
+//   right: 0; 
+
+//   img {
+//     cursor: pointer;
+//   }
+// }
+
+//Footer
+.footer-container {
+    height: 12vh;
+    background: $footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
