@@ -204,7 +204,6 @@ body {
 }
 
 .box h1 {
-  width: 580px;
   font-size: 32px;
   font-weight: 500;
   color: #FFFFFF;
@@ -296,9 +295,8 @@ body {
   line-height: 48px;
 }
 
-.container-box h3 {
-  width: 500px;
-  font-size: 18px;
+.container-box p, .container-box h3 {
+  font-size: 1.125rem;
   font-weight: 500;
   margin-top: 20px;
   color: #1A1E5C;
@@ -307,5 +305,51 @@ body {
 
 .container-box a {
   text-decoration: none;
+}
+
+.container-box .components {
+  margin-top: 80px;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-box .components .component:nth-child(2) {
+  margin-top: 50px;
+}
+
+.container-box .components .component {
+  width: 240px;
+  height: 120px;
+  border-radius: 18px;
+  background: #3B3AD3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.container-box .components .component p {
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 24px;
 }
 /*# sourceMappingURL=app.css.map */

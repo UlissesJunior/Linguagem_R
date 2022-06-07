@@ -9,7 +9,7 @@ render(
   <BrowserRouter>
     <Routes>
         <Route path="/Linguagem_R/" exact={true} element={<App />}></Route>
-        <Route path="/Linguagem_R/sobre" element={<Linguagem />}></Route>
+        <Route path="/Linguagem_R/docs" element={<Linguagem />}></Route>
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")

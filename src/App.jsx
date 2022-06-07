@@ -19,7 +19,7 @@ function App() {
         <div className="container">
           <div className="container-box">
             <div className="left">
-              <h1>
+              <h1 style={{ width: "580px" }}>
                 Olá, essa é uma plataforma desenvolvida para um trabalho escolar
                 no CTIG - Unesp.
               </h1>
@@ -45,7 +45,7 @@ function App() {
                 </div>
               </div>
               <div>
-                <Link to="/Linguagem_R/sobre">
+                <Link to="/Linguagem_R/docs">
                   <div className="button-center">
                     <button>Saiba Mais</button>
                   </div>
@@ -61,31 +61,33 @@ function App() {
 
       <div className="container">
         <div className="container-box">
-          <h2>Curso</h2>
-          <h3>
-            Nessa plataforma, vai ser oferecido de forma gratuita um curso no
-            total de 10 horas contendo videoaulas, artigos e exercícios sobre o
-            assunto
-          </h3>
-          <div className="components">
-            <div>
-              <div className="component">
-                <img src={Icon1} alt="Banner" />
-                <p>Videoaulas</p>
+          <div className="left">
+            <h2>Curso</h2>
+            <h3 style={{ width: "580px" }}>
+              Nessa plataforma, vai ser oferecido de forma gratuita um curso no
+              total de 10 horas contendo videoaulas, artigos e exercícios sobre
+              o assunto.
+            </h3>
+            <div className="components">
+              <div>
+                <div className="component">
+                  <img src={Icon1} alt="Banner" />
+                  <p>Videoaulas</p>
+                </div>
+                <div className="component">
+                  <img src={Icon3} alt="Banner" />
+                  <p>Artigos</p>
+                </div>
               </div>
-              <div className="component">
-                <img src={Icon3} alt="Banner" />
-                <p>Artigos</p>
-              </div>
-            </div>
-            <div>
-              <div className="component">
-                <img src={Icon2} alt="Banner" />
-                <p>Exercícios</p>
-              </div>
-              <div className="component">
-                <img src={Icon4} alt="Banner" />
-                <p>Linguagem R</p>
+              <div>
+                <div className="component">
+                  <img src={Icon2} alt="Banner" />
+                  <p>Exercícios</p>
+                </div>
+                <div className="component">
+                  <img src={Icon4} alt="Banner" />
+                  <p>Linguagem R</p>
+                </div>
               </div>
             </div>
           </div>
