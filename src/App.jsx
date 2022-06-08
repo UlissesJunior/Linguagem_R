@@ -19,11 +19,11 @@ function App() {
         <div className="container">
           <div className="container-box">
             <div className="left">
-              <h1 style={{ width: "580px" }}>
+              <h1 style={{ maxWidth: "580px" }}>
                 Olá, essa é uma plataforma desenvolvida para um trabalho escolar
                 no CTIG - Unesp.
               </h1>
-              <div className="inline-box">
+              <div className="inline-box" style={{ maxWidth: "580px" }}>
                 <div className="inline">
                   <img src={Star} alt="Logo" />
                   <p style={{ margin:"0px" }}>
@@ -63,7 +63,7 @@ function App() {
         <div className="container-box">
           <div className="left">
             <h2>Curso</h2>
-            <h3 style={{ width: "580px" }}>
+            <h3 style={{ Maxwidth: "580px" }}>
               Nessa plataforma, vai ser oferecido de forma gratuita um curso no
               total de 10 horas contendo videoaulas, artigos e exercícios sobre
               o assunto.

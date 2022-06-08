@@ -22,11 +22,17 @@
             }
 
             .inline-box {
-                width: 80vw;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
 
-                p {
-                    width: 28vw;
+                .inline:first-child {
+                    margin: 20px 0px;
                 }
+
+                // p {
+                //     width: 28vw;
+                // }
             }
 
             .button-center {

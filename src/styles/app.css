@@ -122,10 +122,19 @@
     width: 80vw;
   }
   .container .container-box .inline-box {
-    width: 80vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .container .container-box .inline-box p {
-    width: 28vw;
+  .container .container-box .inline-box .inline:first-child {
+    margin: 20px 0px;
   }
   .container .container-box .button-center {
     display: -webkit-box;
