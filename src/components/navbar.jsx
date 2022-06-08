@@ -7,13 +7,15 @@ function Nav() {
     <>
       <div className="nav-container">
         <div className="nav-left">
-        <Link to="/Linguagem_R/">
-          <img src={Logo} alt="Logo" />
+          <Link to="/Linguagem_R/">
+            <img src={Logo} alt="Logo" />
           </Link>
         </div>
         <div className="nav-center">
           <ul>Curso</ul>
-          <ul>Artigos</ul>
+          <Link to="/Linguagem_R/docs">
+            <ul>Docs</ul>
+          </Link>
           <ul>Sobre</ul>
         </div>
         {/* <div className="nav-right">
