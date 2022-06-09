@@ -114,12 +114,15 @@
   }
   .container .container-box h1 {
     text-align: justify;
-    width: 80vw;
-    margin: auto;
     font-size: 1.8em;
+    margin: auto;
+    width: calc(100vw - 40px);
+  }
+  .container .container-box h2 {
+    padding: 0 20px;
   }
   .container .container-box h3 {
-    width: 80vw;
+    padding: 0 20px;
   }
   .container .container-box .inline-box {
     display: -webkit-box;
@@ -134,7 +137,7 @@
             flex-direction: column;
   }
   .container .container-box .inline-box .inline:first-child {
-    margin: 20px 0px;
+    margin: 40px 0px 40px 0px;
   }
   .container .container-box .button-center {
     display: -webkit-box;

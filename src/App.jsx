@@ -63,7 +63,7 @@ function App() {
         <div className="container-box">
           <div className="left">
             <h2>Curso</h2>
-            <h3 style={{ Maxwidth: "580px" }}>
+            <h3 style={{ maxWidth: "580px" }}>
               Nessa plataforma, vai ser oferecido de forma gratuita um curso no
               total de 10 horas contendo videoaulas, artigos e exercícios sobre
               o assunto.
