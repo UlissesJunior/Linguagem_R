@@ -12,7 +12,9 @@ function Nav() {
           </Link>
         </div>
         <div className="nav-center">
-          <ul>Curso</ul>
+          <Link to="/Linguagem_R/course">
+            <ul>Curso</ul>
+          </Link>
           <Link to="/Linguagem_R/docs">
             <ul>Docs</ul>
           </Link>
