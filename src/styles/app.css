@@ -373,4 +373,65 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion {
+  width: 80%;
+}
+
+.acc-box {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.acc-label {
+  position: relative;
+  height: 80px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border: 2px solid #1A1E5C;
+  border-radius: 8px;
+  color: #1A1E5C;
+  cursor: pointer;
+}
+
+.acc-label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+.acc-box.active .acc-label::before {
+  content: "-";
+}
+
+.acc-content {
+  position: relative;
+  padding: 10px;
+  height: 0;
+  background: #FFF;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.acc-box.active .acc-content {
+  height: 150px;
+  padding: 10px;
+}
 /*# sourceMappingURL=app.css.map */

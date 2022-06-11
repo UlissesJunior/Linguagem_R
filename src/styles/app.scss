@@ -162,3 +162,56 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.center {
+  @include center();
+}
+
+//Accordion
+
+.accordion {
+  width: 80%;
+}
+
+.acc-box {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.acc-label{
+  position: relative;
+  height: 80px;
+  padding: 10px;
+  background-color: $bg_white;
+  border: 2px solid $scroll;
+  border-radius: 8px;
+  color: $scroll;
+  cursor: pointer;
+}
+
+.acc-label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+
+.acc-box.active .acc-label::before {
+  content: "-";
+}
+
+.acc-content {
+  position: relative;
+  padding: 10px;
+  height: 0;
+  background: #FFF;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.acc-box.active .acc-content {
+  height: 150px;
+  padding: 10px;
+}
