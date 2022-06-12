@@ -2,11 +2,10 @@ import "./styles/app.css";
 import Nav from "./components/navbar.jsx";
 import Footer from "./components/footer.jsx";
 
-const accordion = document.getElementsByClassName("acc-box")
+const accordion = document.getElementsByClassName(".acc-box")
 for (var i=0; i<accordion.length; i++) {
   accordion[i].addEventListener('click', () => {
     this.classList.toggle(".active")
-    console.log("sim")
   })
 }
 
