@@ -200,7 +200,7 @@ body {
   font-size: 1.5em;
 }
 
-.acc-box.active .acc-label::before {
+.acc-content.active > .acc-label::before {
   content: "-";
 }
 
@@ -213,7 +213,7 @@ body {
   transition: 0.5s;
 }
 
-.acc-box.active .acc-content {
+.acc-box > .acc-content.active {
   height: 150px;
   padding: 10px;
 }
