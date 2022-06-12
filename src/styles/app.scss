@@ -187,6 +187,8 @@ body {
   border-radius: 8px;
   color: $scroll;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .acc-label::before {
