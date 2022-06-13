@@ -13,9 +13,25 @@ import { useState } from "react";
 // }, [])
 
 function Curso() {
-  const [show, setShow] = useState(false);
-  const Each = e => setShow(e.target.value);
-  // onChange={Each}
+  let [accordionClasses, setAccordionClasses] = useState([
+    { name: "Aula 1", content: "Videoaulas", isActive: false },
+    { name: "Aula 2", content: "Exercícios", isActive: false },
+    { name: "Aula 3", content: "Artigos", isActive: false },
+  ]);
+
+  function handleOpenAccordionItem(indexClass) {
+    const newAccordionClasses = accordionClasses.map((item) => {
+      item.isActive = false;
+      return item;
+    });
+
+    let accordionItemSelected = newAccordionClasses[indexClass];
+
+    accordionItemSelected.isActive = !accordionItemSelected.isActive;
+
+    setAccordionClasses(newAccordionClasses);
+  }
+
   return (
     <>
       <Nav />
@@ -30,57 +46,21 @@ function Curso() {
       </div>
       <div className="container">
         <div className="container-box">
-          <div className="accordion">
-            <div className="acc-box">
-              <div className="acc-label" onClick={() => setShow(!show)} >
-                Aula 1
-              </div>
-              {show ? (
-                <div className="acc-content active">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Optio non ducimus odio laboriosam, minus quia sequi quasi
-                    eum assumenda hic facere, a eos necessitatibus possimus
-                    dolorum quis illum voluptates? Eos!
-                  </p>
+          {accordionClasses.map((item, index) => (
+            <div className="accordion">
+              <div className="acc-box">
+                <div
+                  className="acc-label"
+                  onClick={() => handleOpenAccordionItem(index)}
+                >
+                  {item.name}
                 </div>
-              ) : null}
-            </div>
-          </div>
-          <div className="accordion">
-            <div className="acc-box">
-              <div className="acc-label" onClick={() => setShow(!show)}>
-                Aula 2
-              </div>
-              {show ? (
-                <div className="acc-content active">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Optio non ducimus odio laboriosam, minus quia sequi quasi
-                    eum assumenda hic facere, a eos necessitatibus possimus
-                    dolorum quis illum voluptates? Eos!
-                  </p>
+                <div className={`acc-content ${item.isActive && "active"}`}>
+                  <p>{item.content}</p>
                 </div>
-              ) : null}
-            </div>
-          </div>
-          <div className="accordion">
-            <div className="acc-box">
-              <div className="acc-label" onClick={() => setShow(!show)}>
-                Aula 3
               </div>
-              {show ? (
-                <div className="acc-content active">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Optio non ducimus odio laboriosam, minus quia sequi quasi
-                    eum assumenda hic facere, a eos necessitatibus possimus
-                    dolorum quis illum voluptates? Eos!
-                  </p>
-                </div>
-              ) : null}
             </div>
-          </div>
+          ))}
         </div>
       </div>
       <Footer />
