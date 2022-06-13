@@ -45,7 +45,7 @@ function App() {
                 </div>
               </div>
               <div>
-                <Link to="/Linguagem_R/docs">
+                <Link to="/docs">
                   <div className="button-center">
                     <button>Saiba Mais</button>
                   </div>
