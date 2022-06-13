@@ -422,7 +422,7 @@ body {
   font-size: 1.5em;
 }
 
-.acc-content.active > .acc-label::before {
+.acc-content .active > .acc-label::before {
   content: "-";
 }
 

@@ -3,20 +3,13 @@ import Nav from "./components/navbar.jsx";
 import Footer from "./components/footer.jsx";
 import { useState } from "react";
 
-// const useEffect(() => {
-//   const accordion = document.getElementsByClassName('acc-box')
-// for (var i=0; i<accordion.length; i++) {
-//   accordion[i].addEventListener('click', () => {
-//     this.classList.toggle('active')
-//   })
-// }
-// }, [])
-
 function Curso() {
   let [accordionClasses, setAccordionClasses] = useState([
     { name: "Aula 1", content: "Videoaulas", isActive: false },
     { name: "Aula 2", content: "Exercícios", isActive: false },
     { name: "Aula 3", content: "Artigos", isActive: false },
+    { name: "Aula 4", content: "Artigos", isActive: false },
+    { name: "Aula 5", content: "Artigos", isActive: false },
   ]);
 
   function handleOpenAccordionItem(indexClass) {

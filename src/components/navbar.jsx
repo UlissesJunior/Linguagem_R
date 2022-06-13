@@ -18,7 +18,9 @@ function Nav() {
           <Link to="/Linguagem_R/docs">
             <ul>Docs</ul>
           </Link>
-          <ul>Sobre</ul>
+          <Link to="/Linguagem_R/about">
+            <ul>Sobre</ul>
+          </Link>
         </div>
         {/* <div className="nav-right">
           <img src={Mode} alt="Language" />
