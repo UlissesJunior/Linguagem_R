@@ -5,11 +5,11 @@ import Footer from "./components/footer.jsx";
 import { ExternalLink } from "react-external-link";
 
 import Anime1 from "./img/anime-r.png";
-import Anime2 from "./img/anime-2.png";
-import Icon1 from "./img/video_icon.png";
-import Icon2 from "./img/exercicios_icon.png";
-import Icon3 from "./img/artigo_icon.png";
-import Icon4 from "./img/r_icon.png";
+// import Anime2 from "./img/anime-2.png";
+// import Icon1 from "./img/video_icon.png";
+// import Icon2 from "./img/exercicios_icon.png";
+// import Icon3 from "./img/artigo_icon.png";
+// import Icon4 from "./img/r_icon.png";
 
 function Linguagem() {
   return (
