@@ -7,18 +7,18 @@ function Nav() {
     <>
       <div className="nav-container">
         <div className="nav-left">
-          <Link to="/Linguagem_R/">
+          <Link to="/">
             <img src={Logo} alt="Logo" />
           </Link>
         </div>
         <div className="nav-center">
-          <Link to="/Linguagem_R/course">
+          <Link to="/course">
             <ul>Curso</ul>
           </Link>
-          <Link to="/Linguagem_R/docs">
+          <Link to="/docs">
             <ul>Docs</ul>
           </Link>
-          <Link to="/Linguagem_R/about">
+          <Link to="/about">
             <ul>Sobre</ul>
           </Link>
         </div>

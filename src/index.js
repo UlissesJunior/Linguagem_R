@@ -10,10 +10,10 @@ import About from "./About.jsx"
 render(
   <BrowserRouter>
     <Routes>
-        <Route path="/Linguagem_R/" exact={true} element={<App />}></Route>
-        <Route path="/Linguagem_R/docs" element={<Linguagem />}></Route>
-        <Route path="/Linguagem_R/course" element={<Curso/>}></Route>
-        <Route path="/Linguagem_R/about" element={<About/>}></Route>
+        <Route path="/" exact={true} element={<App />}></Route>
+        <Route path="/docs" element={<Linguagem />}></Route>
+        <Route path="/course" element={<Curso/>}></Route>
+        <Route path="/about" element={<About/>}></Route>
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
