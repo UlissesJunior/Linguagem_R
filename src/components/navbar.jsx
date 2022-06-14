@@ -16,7 +16,12 @@ function WindowSize() {
   return size;
 }
 
-function none_ul() {
+function Menu() {
+  const [active, setMode] = useState(false);
+  const ToggleMode = () => {
+    setMode(!active);
+  };
+
   const [height, width] = WindowSize();
   if (width > 800) {
     return (
@@ -38,9 +43,20 @@ function none_ul() {
   return (
     <>
       <div className="nav-right">
-        <div className="icon">
-          <div className="hamburguer"></div>
+        <div className="icon" onClick={ToggleMode}>
+          <div className={active ? "hamburguer active" : "hamburguer"}></div>
         </div>
+      </div>
+      <div className={active ? "menuOpen Open" : "menuClosed"}>
+        <Link to="/course">
+          <ul>Curso </ul>
+        </Link>
+        <Link to="/docs">
+          <ul>Docs</ul>
+        </Link>
+        <Link to="/about">
+          <ul>Sobre</ul>
+        </Link>
       </div>
     </>
   );
@@ -55,7 +71,7 @@ function Nav() {
             <img src={Logo} alt="Logo" />
           </Link>
         </div>
-        {none_ul()}
+        <Menu />
       </div>
     </>
   );
