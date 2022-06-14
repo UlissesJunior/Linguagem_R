@@ -1,6 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../img/logo_s.png";
 import { Link } from "react-router-dom";
+
+function WindowSize() {
+  const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
+  useEffect(() => {
+    const handleResize = () => {
+      setSize([window.innerHeight, window.innerWidth]);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  return size;
+}
+
+function none_ul() {
+  const [height, width] = WindowSize();
+  if (width > 800) {
+    return (
+      <>
+        <div className="nav-center">
+          <Link to="/course">
+            <ul>Curso </ul>
+          </Link>
+          <Link to="/docs">
+            <ul>Docs</ul>
+          </Link>
+          <Link to="/about">
+            <ul>Sobre</ul>
+          </Link>
+        </div>
+      </>
+    );
+  }
+  return (
+    <>
+      <div className="nav-right">
+        <div className="icon">
+          <div className="hamburguer"></div>
+        </div>
+      </div>
+    </>
+  );
+}
 
 function Nav() {
   return (
@@ -11,20 +55,7 @@ function Nav() {
             <img src={Logo} alt="Logo" />
           </Link>
         </div>
-        <div className="nav-center">
-          <Link to="/course">
-            <ul>Curso</ul>
-          </Link>
-          <Link to="/docs">
-            <ul>Docs</ul>
-          </Link>
-          <Link to="/about">
-            <ul>Sobre</ul>
-          </Link>
-        </div>
-        {/* <div className="nav-right">
-          <img src={Mode} alt="Language" />
-        </div> */}
+        {none_ul()}
       </div>
     </>
   );
