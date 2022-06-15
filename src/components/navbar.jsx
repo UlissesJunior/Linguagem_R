@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../img/logo_s.png";
+import star from "../img/star.png";
 import { Link } from "react-router-dom";
 
 function WindowSize() {
@@ -30,7 +31,7 @@ function Menu() {
   // }
 
   const [height, width] = WindowSize();
-  if (width > 800) {
+  if (width > 1000) {
     return (
       <>
         <div className="nav-center">
@@ -55,13 +56,20 @@ function Menu() {
         </div>
       </div>
       <div className={active ? "menuOpen Open" : "menuClosed"}>
+      <Link to="/">
+          {/* <ul><img src={star} alt="" />Home</ul> */}
+          <ul>Home</ul>
+        </Link>
         <Link to="/course">
-          <ul>Curso </ul>
+          {/* <ul><img src={star} alt="" />Curso </ul> */}
+          <ul>Curso</ul>
         </Link>
         <Link to="/docs">
+          {/* <ul><img src={star} alt="" />Docs</ul> */}
           <ul>Docs</ul>
         </Link>
         <Link to="/about">
+          {/* <ul><img src={star} alt="" />Sobre</ul> */}
           <ul>Sobre</ul>
         </Link>
       </div>

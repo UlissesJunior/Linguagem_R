@@ -2,6 +2,7 @@ import "./styles/app.css";
 import Nav from "./components/navbar.jsx";
 import Footer from "./components/footer.jsx";
 import { useState } from "react";
+import Course1 from "./img/course-1.png"
 
 function Curso() {
   let [accordionClasses, setAccordionClasses] = useState([
@@ -33,6 +34,9 @@ function Curso() {
           <div className="container-box .center-row">
             <div className="left">
               <h1>Curso</h1>
+            </div>
+            <div className="right">
+              <img src={Course1} alt="curso" />
             </div>
           </div>
         </div>
