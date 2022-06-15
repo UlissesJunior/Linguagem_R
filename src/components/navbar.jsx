@@ -22,6 +22,13 @@ function Menu() {
     setMode(!active);
   };
 
+  // function html() {
+  //   var html = document.getElementsByTagName(html)
+  //   console.log(html)
+  //   html.style.cssText = 
+  //   'overflow: hidden;'
+  // }
+
   const [height, width] = WindowSize();
   if (width > 800) {
     return (
