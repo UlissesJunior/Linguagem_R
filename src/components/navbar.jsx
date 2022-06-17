@@ -23,12 +23,11 @@ function Menu() {
     setMode(!active);
   };
 
-  // function html() {
-  //   var html = document.getElementsByTagName(html)
-  //   console.log(html)
-  //   html.style.cssText = 
-  //   'overflow: hidden;'
-  // }
+//  if (active==true){
+//     const html = document.getElementsByClassName("body")
+//     html.style.cssText = 
+//     'overflow: hidden;'
+//  }
 
   const [height, width] = WindowSize();
   if (width > 1000) {

@@ -68,7 +68,7 @@ function App() {
               total de 10 horas contendo videoaulas, artigos e exercícios sobre
               o assunto.
             </h3>
-            <div className="components">
+            <div className="components" style={{ maxWidth: "580px" }}>
               <div>
                 <div className="component">
                   <img src={Icon1} alt="Banner" />

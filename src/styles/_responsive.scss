@@ -49,15 +49,24 @@
     }
 }
 
-@media (max-width: 500px) {
-    .container-box {
+@media (max-width:1000px) {
+    .container {
         .components {
-            margin-top: 8px;
-            max-width: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-around;
             align-items: center;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        .components {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
             .component:first-child {
                 margin-top: 24px;
