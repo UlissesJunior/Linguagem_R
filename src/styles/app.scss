@@ -114,7 +114,8 @@ body {
     line-height: 48px;
   }
 
-  p, h3 {
+  p,
+  h3 {
     font-size: 1.125rem;
     font-weight: 500;
     margin-top: 20px;
@@ -131,7 +132,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .component:nth-child(2) {
       margin-top: 50px;
@@ -171,6 +172,35 @@ body {
   overflow: hidden;
 }
 
+.row {
+  height: 440px;
+  width: 60%;
+  display: inline-flex;
+  align-items: center;
+  margin: 20px;
+
+  .row-text {
+
+    h1,
+    p {
+      color: $font_text;
+      padding-left: 20px;
+    }
+
+    h1 {
+      min-width: 240px;
+      width: max-content;
+    }
+
+  }
+
+  img {
+    max-width: 400px;
+    max-height: 440px;
+    border-radius: 8px;
+  }
+}
+
 //Accordion
 
 .accordion {
@@ -182,7 +212,7 @@ body {
   margin: 10px 20px;
 }
 
-.acc-label{
+.acc-label {
   position: relative;
   height: 80px;
   padding: 10px;
@@ -204,7 +234,7 @@ body {
   font-size: 1.5em;
 }
 
-.acc-content .active > .acc-label::before {
+.acc-content .active>.acc-label::before {
   content: "-";
 }
 
@@ -217,7 +247,7 @@ body {
   transition: 0.5s;
 }
 
-.acc-box > .acc-content.active {
+.acc-box>.acc-content.active {
   height: 150px;
   padding: 10px;
 }

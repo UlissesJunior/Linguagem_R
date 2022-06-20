@@ -47,6 +47,14 @@
         }
 
     }
+
+    .row {
+        margin: 0;
+        width: 100;
+        .row-text {
+            display: none;
+        }
+    }
 }
 
 @media (max-width:1000px) {
