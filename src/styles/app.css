@@ -287,12 +287,31 @@
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+@media (max-width: 1040px) {
+  .container-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .row {
     margin: 0;
-    width: 100;
   }
   .row .row-text {
     display: none;
+  }
+  .row:hover img {
+    -webkit-transition: 400ms;
+    transition: 400ms;
+    -webkit-filter: saturate(0);
+            filter: saturate(0);
   }
 }
 
@@ -547,7 +566,6 @@ body {
 
 .row {
   height: 440px;
-  width: 60%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;

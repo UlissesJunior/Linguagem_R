@@ -47,14 +47,29 @@
         }
 
     }
+}
+
+@media (max-width:1040px) {
+    .container-box {
+        @include center();
+    }
 
     .row {
         margin: 0;
-        width: 100;
+
         .row-text {
             display: none;
         }
     }
+
+    .row:hover {
+        img {
+            transition: 400ms;
+            filter: saturate(0);
+        }
+    }
+
+    //Subir o nome e os bgl no hover
 }
 
 @media (max-width:1000px) {
