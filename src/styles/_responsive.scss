@@ -49,11 +49,8 @@
     }
 }
 
-@media (max-width:1040px) {
-    .container-box {
-        @include center();
-    }
-
+@media (max-width:1000px) {
+    
     .row {
         margin: 0;
 

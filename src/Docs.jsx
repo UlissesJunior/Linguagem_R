@@ -29,7 +29,7 @@ function Linguagem() {
       </div>
 
       <div className="container">
-        <div className="container-box" style={{ padding: "80px 20px" }}>
+        <div className="container-box">
           <h2>O que é linguagem R?</h2>
           <p>
             R é uma linguagem de programação estatística e gráfica que vem se

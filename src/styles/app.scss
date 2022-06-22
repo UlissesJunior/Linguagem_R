@@ -27,6 +27,7 @@ body {
 .container-box {
   max-width: $container-m;
   margin: auto;
+  padding: 60px 20px //blé
 }
 
 .box {
@@ -176,7 +177,7 @@ body {
   height: 440px;
   display: inline-flex;
   align-items: center;
-  margin: 20px;
+  margin-bottom: 40px;
 
   .row-text {
 
@@ -198,6 +199,10 @@ body {
     max-height: 440px;
     border-radius: 8px;
   }
+}
+
+.row:nth-child(4) {
+  margin-bottom: 0;
 }
 
 //Accordion
