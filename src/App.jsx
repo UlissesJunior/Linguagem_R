@@ -17,7 +17,7 @@ function App() {
       <Nav />
       <div className="box">
         <div className="container">
-          <div className="container-box">
+          <div className="container-box" style={{ padding: "0px" }}>
             <div className="left">
               <h1 style={{ maxWidth: "580px" }}>
                 Olá, essa é uma plataforma desenvolvida para um trabalho escolar
@@ -60,7 +60,7 @@ function App() {
       </div>
 
       <div className="container">
-        <div className="container-box">
+        <div className="container-box" style={{ padding: "0px" }}>
           <div className="left">
             <h2>Curso</h2>
             <h3 style={{ maxWidth: "580px" }}>

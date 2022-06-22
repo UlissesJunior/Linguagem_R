@@ -17,7 +17,7 @@ function Linguagem() {
       <Nav />
       <div className="box">
         <div className="container">
-          <div className="container-box">
+          <div className="container-box" style={{ padding: "0px" }}>
             <div className="left">
               <h1>Linguagem R</h1>
             </div>

@@ -12,7 +12,7 @@ function About() {
       <Nav />
       <div className="box">
         <div className="container">
-          <div className="container-box .center-row">
+          <div className="container-box .center-row" style={{ padding: "0px" }}>
             <div className="left">
               <h1>Sobre</h1>
             </div>
