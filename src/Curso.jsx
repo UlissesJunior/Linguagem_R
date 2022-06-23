@@ -2,7 +2,7 @@ import "./styles/app.css";
 import Nav from "./components/navbar.jsx";
 import Footer from "./components/footer.jsx";
 import { useState } from "react";
-import { ExternalLink } from "react-external-link";
+// import { ExternalLink } from "react-external-link";
 import Course1 from "./img/course-1.png"
 
 function Curso() {

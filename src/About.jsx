@@ -5,6 +5,7 @@ import Kamily from "./img/about/Kamily.jpg";
 import Caua from "./img/about/Caua.jpg";
 import Ulisses from "./img/about/Ulisses.jpg";
 import Luiz from "./img/about/Luiz.jpg";
+import sobre from "./img/about-1.png"
 
 function About() {
   return (
@@ -15,6 +16,9 @@ function About() {
           <div className="container-box .center-row" style={{ padding: "0px" }}>
             <div className="left">
               <h1>Sobre</h1>
+            </div>
+            <div className="right">
+              <img src={sobre} alt="about"/>
             </div>
           </div>
         </div>
