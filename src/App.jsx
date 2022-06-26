@@ -23,7 +23,7 @@ function App() {
                 Olá, essa é uma plataforma desenvolvida para um trabalho escolar
                 no CTIG - Unesp.
               </h1>
-              <div className="inline-box" style={{ maxWidth: "580px" }}>
+              <div className="inline-box" style={{ maxWidth: "580px", marginTop: "27px" }}>
                 <div className="inline">
                   <img src={Star} alt="Logo" />
                   <p style={{ margin:"0px" }}>
@@ -47,7 +47,7 @@ function App() {
               <div>
                 <Link to="/docs">
                   <div className="button-center">
-                    <button>Saiba Mais</button>
+                    <button style={{ marginTop: "40px" }}>Saiba Mais</button>
                   </div>
                 </Link>
               </div>
