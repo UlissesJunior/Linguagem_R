@@ -255,3 +255,20 @@ body {
   height: 145px;
   padding: 10px;
 }
+
+.animate {
+  animation: UpDown 6s ease infinite;
+  @keyframes UpDown {
+    0% {
+        position: absolute;
+    }
+    
+    50% {
+        margin-top: -8vh;
+    }
+
+    100% {
+      position: absolute;
+    }
+}
+}

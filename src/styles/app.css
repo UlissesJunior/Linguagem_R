@@ -642,4 +642,33 @@ body {
   height: 145px;
   padding: 10px;
 }
+
+.animate {
+  -webkit-animation: UpDown 6s ease infinite;
+          animation: UpDown 6s ease infinite;
+}
+
+@-webkit-keyframes UpDown {
+  0% {
+    position: absolute;
+  }
+  50% {
+    margin-top: -8vh;
+  }
+  100% {
+    position: absolute;
+  }
+}
+
+@keyframes UpDown {
+  0% {
+    position: absolute;
+  }
+  50% {
+    margin-top: -8vh;
+  }
+  100% {
+    position: absolute;
+  }
+}
 /*# sourceMappingURL=app.css.map */
