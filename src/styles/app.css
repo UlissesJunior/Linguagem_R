@@ -644,8 +644,8 @@ body {
 }
 
 .animate {
-  -webkit-animation: UpDown 6s ease infinite;
-          animation: UpDown 6s ease infinite;
+  -webkit-animation: UpDown 4s ease infinite;
+          animation: UpDown 4s ease infinite;
 }
 
 @-webkit-keyframes UpDown {
