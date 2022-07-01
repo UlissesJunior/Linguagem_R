@@ -23,10 +23,13 @@ function App() {
                 Olá, essa é uma plataforma desenvolvida para um trabalho escolar
                 no CTIG - Unesp.
               </h1>
-              <div className="inline-box" style={{ maxWidth: "580px", marginTop: "27px" }}>
+              <div
+                className="inline-box"
+                style={{ maxWidth: "580px", marginTop: "27px" }}
+              >
                 <div className="inline">
                   <img src={Star} alt="Logo" />
-                  <p style={{ margin:"0px" }}>
+                  <p style={{ margin: "0px" }}>
                     Aqui, você pode aprender mais sobre a Linguagem R, que é uma
                     linguagem de programação multi-paradigma orientada a
                     objetos, voltada à manipulação, análise e visualização de
@@ -35,7 +38,7 @@ function App() {
                 </div>
                 <div className="inline">
                   <img src={Star} alt="Star" />
-                  <p style={{ margin:"0px" }}>
+                  <p style={{ margin: "0px" }}>
                     <b>Alunos no projeto:</b> <br />
                     Cauã Gabriel Pereira da Silva <br />
                     Kamily Maria Barboza Leduino <br />
@@ -71,21 +74,29 @@ function App() {
             <div className="components" style={{ maxWidth: "580px" }}>
               <div>
                 <div className="component">
-                  <img src={Icon1} alt="Banner" />
+                  <Link to="/course">
+                    <img src={Icon1} alt="Banner" />
+                  </Link>
                   <p>Videoaulas</p>
                 </div>
                 <div className="component">
-                  <img src={Icon3} alt="Banner" />
+                  <Link to="/course">
+                    <img src={Icon3} alt="Banner" />
+                  </Link>
                   <p>Artigos</p>
                 </div>
               </div>
               <div>
                 <div className="component">
-                  <img src={Icon2} alt="Banner" />
+                  <Link to="/course">
+                    <img src={Icon2} alt="Banner" />
+                  </Link>
                   <p>Exercícios</p>
                 </div>
                 <div className="component">
-                  <img src={Icon4} alt="Banner" />
+                  <Link to="/docs">
+                    <img src={Icon4} alt="Banner" />
+                  </Link>
                   <p>Linguagem R</p>
                 </div>
               </div>
